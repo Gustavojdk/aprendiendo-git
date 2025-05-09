@@ -256,4 +256,51 @@ Revertir un commit específico:
 git revert <hash_del_commit>
 ```
 ### 📌 Conclusión
-Saber cómo utilizar correctamente git revert y otras herramientas es esencial para manejar tu historial de cambios de manera efectiva.
+Saber cómo utilizar correctamente git revert y otras herramientas es esencial para manejar tu historial de cambios de manera efectiva
+## 📚Clase 8 – Git Hooks: Automatización de tareas en Git
+En esta clase, exploramos qué son los Git Hooks, cómo funcionan y su aplicación tanto en el lado del cliente como en el servidor. Los hooks permiten ejecutar scripts de manera automática en ciertos eventos del ciclo de vida de Git, facilitando tareas como validaciones, pruebas y automatización.
+
+¿Qué es un Git Hook?
+Un hook (o punto de enganche) es un script que se activa automáticamente cuando ocurre un evento específico en Git, como un commit, un push o un merge.
+
+Se encuentran en la carpeta .git/hooks/ y llevan el mismo nombre que el evento que están escuchando.
+
+Hooks del lado del cliente (local)
+Se ejecutan únicamente en tu máquina local y no se sincronizan automáticamente con el repositorio remoto.
+
+Principales hooks:
+pre-commit
+Ejecuta linters, verifica archivos modificados o evita commits demasiado grandes.
+
+prepare-commit-msg
+Modifica o añade información al mensaje de commit de forma automática.
+
+commit-msg
+Verifica que el mensaje cumpla con un formato específico (como los Conventional Commits).
+
+post-commit
+Envía notificaciones (por ejemplo, a Slack) después de realizar un commit.
+
+pre-push
+Ejecuta pruebas antes de permitir que se suban cambios al repositorio remoto.
+
+post-checkout / post-merge
+Limpia archivos o ramas después de un checkout o merge.
+
+Hooks del lado del servidor (remoto)
+Se ejecutan en el servidor del repositorio (GitHub, GitLab, etc.) y ayudan a mantener la integridad del código compartido.
+
+Principales hooks:
+pre-receive
+Rechaza commits inválidos, con conflictos o de usuarios no autorizados.
+
+update
+Permite controlar con precisión qué ramas o referencias pueden ser actualizadas.
+
+post-receive
+Notifica a los usuarios o actualiza la interfaz tras recibir cambios.
+
+### Ejemplos prácticos
+Se presentaron ejemplos de scripts en Bash para validar commits, ejecutar pruebas o enviar mensajes automáticamente.
+
+También discutimos cómo compartir hooks con otros
