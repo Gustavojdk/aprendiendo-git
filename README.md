@@ -18,9 +18,9 @@ Con Git podemos:
 - Guardar cada versión de un archivo.
 - Recuperar versiones anteriores cuando lo necesitemos.
 - Ver quién hizo qué cambios y cuándo.
-- Colaborar en equipo sin pisarnos los cambios.
+- Colaborar en equipo sin pisarnos los cambios
 
----
+![image](https://github.com/user-attachments/assets/f63a0e4d-19c8-4d4d-a26d-a897f7a9dda1)
 
 ### 🛠️ ¿Para qué sirve?
 
@@ -138,6 +138,9 @@ git init
 Este comando se ejecuta dentro de la carpeta del proyecto que queremos versionar.
 ### 🌱 ¿Qué es la rama main?
 Cuando usamos git init, Git crea una rama principal. Antes se llamaba master, pero ahora el nombre por defecto recomendado es main. GitHub también ha adoptado main como su estándar actual
+
+![image](https://github.com/user-attachments/assets/d14d9873-0144-4823-aa68-aa24ad5d3574)
+
 ## 📚 Clase 5: Conectando tu Repositorio Local con GitHub
 ### 🧠 Concepto
 En esta clase, vas a aprender cómo vincular tu proyecto local con un repositorio remoto en GitHub. Esto te permitirá guardar tu trabajo en la nube y colaborar con otros desarrolladores.
@@ -151,7 +154,9 @@ En esta clase, vas a aprender cómo vincular tu proyecto local con un repositori
 4. Puedes decidir si hacerlo público o privado.
 5. Importante: No marques la opción de inicializar con un README si ya tienes archivos en tu repositorio local.
 6. Haz clic en "Create repository"
-7. 
+
+![image](https://github.com/user-attachments/assets/199f996d-05a7-4132-858b-2a34b9f3359e)
+
 ## 📚 Clase 6 - Buenas prácticas en Git
 ### 🧠 ¿Por qué son importantes?
 Seguir buenas prácticas en Git ayuda a que tu proyecto esté ordenado y sea más fácil de entender, especialmente si trabajás en equipo.
@@ -159,16 +164,15 @@ Seguir buenas prácticas en Git ayuda a que tu proyecto esté ordenado y sea má
 ### ✅ Buenas prácticas:
 Commits pequeños y claros
 Hacer commits seguido, con mensajes que expliquen bien lo que cambiaste. Ej: "Agrego validación al login".
-
 Usar ramas
+
 Siempre crear una nueva rama para trabajar en una función o arreglo. Así no tocas la rama principal (main o master) hasta que todo esté bien.
-
 Actualizar seguido tu repo local
+
 Usar git pull para traer los cambios más nuevos del repositorio remoto y evitar errores o conflictos.
-
 Revisar antes de hacer commit
-Ver con git status y git diff qué vas a subir, para no incluir archivos innecesarios.
 
+Ver con git status y git diff qué vas a subir, para no incluir archivos innecesarios.
 Usar .gitignore
 Para que Git no suba archivos que no hacen falta (como carpetas del IDE o archivos temporales).
 
@@ -204,6 +208,9 @@ Dirígete a tu repositorio en GitHub y verifica que los archivos se hayan subido
 `git remote add origin <URL>`: Conecta tu repositorio local con el remoto en GitHub.
 
 `git push -u origin main`: Sube tus archivos a la rama principal del repositorio remoto
+
+![image](https://github.com/user-attachments/assets/bf52b921-6a9d-40d6-8518-05f4ed9ebf6f)
+
 ## 🔄 Clase 7 – Cómo deshacer cambios en Git
 ## 🧠 ¿Por qué es importante?
 En Git, es bastante común cometer errores o querer revertir algunos cambios. Saber cómo usar las herramientas adecuadas para deshacer esos cambios te ayuda a mantener un historial limpio y a colaborar de manera más efectiva.
